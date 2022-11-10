@@ -9,19 +9,24 @@ function(){
 const user = Math.floor(Math.random()* 6 + 1);
 const pc = Math.floor(Math.random()* 6 + 1);
 
-console.log("dado utente", user);
-console.log("dado computer",pc);
+// console.log("dado utente", user);
+// console.log("dado computer",pc);
 
+// VARIABILE RISULTATO H2
+let risultato = document.getElementById("result");
 
 // CONDIZIONE VINTO/PERSO/PAREGGIO
 if (user > pc){
-  console.log("Hai vinto tu!");
+  risultato.innerHTML =`Hai vinto!`;
+  risultato.className = 'green';
 }
 else if (user < pc){
-  console.log("Hai perso!")
+  risultato.innerHTML = `Hai perso!`
+  risultato.className = 'red';
 }
 else{
-  console.log("Pareggio!")
+  risultato.innerHTML = `Pareggio!`
+  risultato.className = "";
 }
 }
 )
