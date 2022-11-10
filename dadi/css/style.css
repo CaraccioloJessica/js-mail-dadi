@@ -13,6 +13,7 @@ h1{
   text-align: center;
   color: #fffeb3;
   margin-top: 30px;
+  font-size: 3rem;
 }
 
 .container{
@@ -27,11 +28,13 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 20px;
-  background-color: #ffe28a;
   width: calc(100% / 2 - 40px);
   height: 200px;
+  margin: 30px 20px;
+  background-color: #ffe28a;
+  color: #666547;
   border-radius: 20px;
+  font-size: 3.5rem;
 }
 
 button{
@@ -44,6 +47,7 @@ button{
 h2{
   margin-top: 30px;
   text-align: center;
+  font-size: 3rem;
 }
 
 .green{
