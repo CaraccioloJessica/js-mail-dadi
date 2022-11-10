@@ -2,15 +2,19 @@
 
 // BOTTONE
 const button = document.getElementById("play");
+
 button.addEventListener("click",
 function(){
 
 // VARIABILI GIOCATORI
 const user = Math.floor(Math.random()* 6 + 1);
-const pc = Math.floor(Math.random()* 6 + 1);
-
 // console.log("dado utente", user);
+document.querySelector('.user-dice').innerHTML = user;
+
+const pc = Math.floor(Math.random()* 6 + 1);
 // console.log("dado computer",pc);
+document.querySelector('.pc-dice').innerHTML = pc;
+
 
 // VARIABILE RISULTATO H2
 let risultato = document.getElementById("result");
