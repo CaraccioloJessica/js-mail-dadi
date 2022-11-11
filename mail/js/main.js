@@ -8,16 +8,18 @@ console.log(userMail);
 const listaMail = ["luca@gmail.com", "marco@gmail.com", "paolo@gmail.com"];
 let invito = false;
 
+// LOOP
 for (let i = 0; i < listaMail.length; i++){   
-  // MESSAGGIO SEI INVITATO
   if (userMail === listaMail[i]){
     invito = true;
   }
 }
 
+// MESSAGGIO SEI INVITATO
 if (invito !== false){
   console.log("Sei tra gli invitati!")
 }
+// MESSAGGIO NON INVITATO
 else{
   console.log("Non sei tra gli invitati")
 }
